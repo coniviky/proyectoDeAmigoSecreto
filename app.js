@@ -28,8 +28,24 @@ document.addEventListener("DOMContentLoaded", () => {
     let botonAgregar = document.getElementById('agregarNombre');
 botonAgregar.addEventListener('click', agregarNombreAmigos);
 
+function sortearAmigos(){
+
+    if (amigos.length === 0) {
+        alert("No hay amigos agregados para sortear");
+        return; 
+    }
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[indiceAleatorio];
+
+    amigos.splice(indiceAleatorio, 1);
+    
+    let resultadoAmigoSorteado = document.getElementById('resultado');
+    resultadoAmigoSorteado.textContent = `El amigo elegido es: ${amigoSorteado}`;
+    console.log(amigoSorteado);
+}
+
+let botonSortear = document.getElementById('sorteo');
+botonSortear.addEventListener('click', sortearAmigos);
 })
-
-
-
-
+    
+    
