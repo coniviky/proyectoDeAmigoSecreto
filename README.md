@@ -22,8 +22,3 @@
 
 Para ejecutar este proyecto solo necesitas un navegador web moderno.
 
-## 📦 Instalación
-
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/tuusuario/amigo-secreto.git
